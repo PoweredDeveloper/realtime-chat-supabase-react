@@ -31,7 +31,7 @@ export default function MessageForm() {
           username,
           country,
           is_authenticated: session ? true : false,
-          timestamp: new Date().toISOString()
+          timestamp: new Date(new Date() + 360000).toISOString()
         },
       ]);
 
